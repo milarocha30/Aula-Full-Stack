@@ -3,6 +3,11 @@
     background-color: #500404;
     width: 100px;
     height: 100px;
+    animation-name: Engenharia;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    position: relative;
 }
 
 @keyframes Senai{
@@ -16,15 +21,15 @@
 
 @keyframes Engenharia{
     0%{
-        background-color: blue;
+        background-color: blue; left: 0px; top: 0px;
     }
     25%{
-        background-color:blueviolet;
+        background-color:blueviolet; left: 100px; top: 0px;
     }
     50%{
-        background-color: yellowgreen;
+        background-color: yellowgreen; left: 100px; top: 100px;
     }
     100%{
-        background-color: blue;
+        background-color: blue; left: 0px; top: 100px;
     }
 }
