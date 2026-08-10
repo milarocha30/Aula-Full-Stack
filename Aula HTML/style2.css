@@ -1,0 +1,30 @@
+
+#divi3{
+    background-color: #500404;
+    width: 100px;
+    height: 100px;
+}
+
+@keyframes Senai{
+    from{
+        background-color: #ff0606;
+    } 
+    to{
+        background-color: blue;
+    }
+}
+
+@keyframes Engenharia{
+    0%{
+        background-color: blue;
+    }
+    25%{
+        background-color:blueviolet;
+    }
+    50%{
+        background-color: yellowgreen;
+    }
+    100%{
+        background-color: blue;
+    }
+}

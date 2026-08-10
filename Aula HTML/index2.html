@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula 2</title>
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
     
     <!-- CSS inline-->
-    <div id="divi1" style="background-color: rgb(214, 151, 214); width: 200px; height: 100px; font-style: italic; font-size: 20px; font-family: Arial; font-weight: bold;">
+    <div id="divi1" style="background-color: blue; width: 200px; height: 100px; font-style: italic; font-size: 20px; font-family: Arial; font-weight: bold;">
         <p>Segunda div</p>
         
     </div>
 
     <div id="divi2">
+        <p class="certo">CERTO</p>
+        <p class="errado">ERRADO</p>
+    <!--CSS stylesheet-->
+    </div>
+
+    <div id="divi3">
 
     </div>
 
@@ -24,22 +31,47 @@
             todas as divs sofrem alterações */
         #divi1{
             border-radius: 0px;
+            animation-name: Engenharia;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
         }
 
-        #divi2{
+
+        #divi2 .certo{
             width: 100px;
             height: 100px;
             background-color: rgb(49, 145, 85);
             border-radius: 20px;
-            cursor:alias;
+            float: right;
+            text-align: center;
+            font-family: Arial;
+            justify-content: center;
+            align-items: center;
+            display: flex;
         }
 
-         #divi2:hover{
+        #divi2:hover .certo{
+            display: none;
+        }
+
+        #divi2 .errado{
+            display: none;
+        }
+         #divi2:hover .errado{
             width: 100px;
             height: 100px;
-            background-color: rgb(49, 145, 85);
-            border-radius: 0px;
+            background-color: red;
+            border-radius: 20px;
             cursor: pointer;
+            animation: Senai 4s;
+            float: right;
+            text-align: center;
+            font-family: Arial;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            
+            
         }
         
 
