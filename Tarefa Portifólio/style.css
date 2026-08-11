@@ -1,0 +1,76 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.apresentacao{
+    background: linear-gradient(#0F2027, #203A43, #2C5364);
+    display: flex;
+    flex-direction: column; /* Organiza nome e função um embaixo do outro */
+    align-items: center;
+    gap: 0px; /* Altere para 2px ou 4px caso ache colado demais */
+    height: 13vh; /* Ocupa toda a altura da tela */
+    padding: 20px; /* Adiciona espaçamento interno */
+    margin: 0; /* Remove margens padrão */
+}
+
+.cabecalho :hover{  
+    background-image: linear-gradient(135deg, #43829d, #203A43, #2C5364);       
+}
+
+#nome, #funcao{
+    font-family: "Share Tech", sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0; /* Remove margens padrão */
+}
+
+#nome{
+    font-size: 3em; /* Tamanho maior para o nome */
+    font-weight: bold; /* Negrito para destaque */
+}
+
+#funcao{
+    font-size: 2em; /* Tamanho menor para a função */
+}
+
+#sanval{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.foto{
+    display: block;
+    justify-content: center;
+    margin-left: 20%;
+    margin-top: 70px;
+}
+
+.bio{
+    display: flex;        /* Coloca os elementos filhos lado a lado */
+    gap: 20px;            /* Cria um espaço entre as divs */
+    width: 100%;
+}
+
+.sobre-titulo{
+    font-family: Science Gothic, sans-serif;
+    font-size: 1.8em;
+    color:  #2C5364;
+}
+
+.descricao{
+    flex: 1;              /* Faz com que ambas ocupem o mesmo tamanho (50% cada) */
+    padding: 50px;
+    border-radius: 8px;
+}
+
+.secao-titulo{
+    font-family: Science Gothic, sans-serif;
+    font-size: 1.8em;
+    color: white;
+    background: linear-gradient(#0F2027, #203A43, #2C5364);
+}
+
