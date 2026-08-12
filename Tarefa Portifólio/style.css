@@ -14,6 +14,7 @@ html, body {
     height: 13vh; /* Ocupa toda a altura da tela */
     padding: 20px; /* Adiciona espaçamento interno */
     margin: 0; /* Remove margens padrão */
+    
 }
 
 .cabecalho :hover{  
@@ -40,13 +41,54 @@ html, body {
     width: 200px;
     height: 200px;
     border-radius: 100%;
+    object-fit: cover; /* Garante que a imagem preencha o círculo sem distorção */
+}
+
+/* NOVO: Container da coluna da esquerda (Foto + Mensagem) */
+.coluna-esquerda {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding-left: 20px;
 }
 
 .foto{
-    display: block;
+    display: flex;
     justify-content: center;
-    margin-left: 20%;
-    margin-top: 70px;
+}
+
+.nome{
+    font-family: Science Gothic, sans-serif;
+    font-size: 1.5em;
+    color: #0f1f25;
+    text-align: center;
+}
+.mensagem{
+    font-family: "Share Tech", sans-serif;
+    font-size: 1.1em;
+    color: #2C5364;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.enviar{
+    border: none;
+    border-radius: 10%;
+    background-color: #568fa8;
+    font-family: Science Gothic, sans-serif;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background-color: #1e3e4c;
 }
 
 .bio{
@@ -57,14 +99,18 @@ html, body {
 
 .sobre-titulo{
     font-family: Science Gothic, sans-serif;
-    font-size: 1.8em;
+    font-size: 2em;
     color:  #2C5364;
+    animation-name: Blink;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 .descricao{
     flex: 1;              /* Faz com que ambas ocupem o mesmo tamanho (50% cada) */
     padding: 50px;
     border-radius: 8px;
+    animation: surgirSuave 1.2s ease-out;
 }
 
 .secao-titulo{
@@ -72,5 +118,56 @@ html, body {
     font-size: 1.8em;
     color: white;
     background: linear-gradient(#0F2027, #203A43, #2C5364);
+    display: flex;
+    align-items: center;            /* Mantém ambos centralizados verticalmente */
+    width: 65%;
+    padding: 10px 20px; /* Espaçamento interno para o título e o botão */
 }
+
+.infos{
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    color: #2C5364;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    width: 65%;
+}
+
+.rodape{
+    background: linear-gradient(135deg, #d8e5e8, #c1d7dd);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px; /* Espaço entre a imagem e o texto */
+}
+
+.logo{
+    width: 180px;
+    height: auto;
+
+}
+
+
+.copyright{
+    font-family: Science Gothic, sans-serif;
+    color: #0F2027;
+    font-size: 1em;
+}
+
+/* Opcional: Ajuste para o botão não encolher em textos grandes */
+
+@keyframes surgirSuave {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 
