@@ -17,9 +17,10 @@ html, body {
     
 }
 
-.cabecalho :hover{  
-    background-image: linear-gradient(135deg, #43829d, #203A43, #2C5364);       
+.apresentacao:hover{
+    background-image: linear-gradient(135deg, #43829d, #203A43, #2C5364);
 }
+
 
 #nome, #funcao{
     font-family: "Share Tech", sans-serif;
@@ -42,6 +43,7 @@ html, body {
     height: 200px;
     border-radius: 100%;
     object-fit: cover; /* Garante que a imagem preencha o círculo sem distorção */
+    border-color: #0f1f25;
 }
 
 /* NOVO: Container da coluna da esquerda (Foto + Mensagem) */
